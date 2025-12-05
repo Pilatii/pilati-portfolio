@@ -4,10 +4,10 @@ import { Code2 } from 'lucide-react';
 import { useEffect, useState } from "react";
 
 type Project = {
-	id: string;
-	title: string;
-	techs: string[];
-	url: string;
+	id: string
+	title: string
+	techs: string[]
+	url: string
 }
 
 
@@ -30,7 +30,7 @@ export default function ProjectsCards() {
 				Projetos
 			</h2>
 
-			<div className="grid grid-cols-2 gap-6">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 				{projects.map((project, idx) => (
 					<a
 						href={project.url}

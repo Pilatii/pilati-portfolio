@@ -17,12 +17,13 @@ export async function GET() {
 			]
 		});
 
-		const projects = response.results.map((row: any) => ({
+		const techs = response.results.map((row: any) => ({
 			id: row.id,
-			name: row.properties.Name?.title?.[0]?.plain_text ?? "",
+			group: row.properties.Group?.title?.[0]?.plain_text ?? "",
+			techs: row.properties.Techs?.multi_select?.map((t: any) => t.name) ?? [],
 		}));
 
-		return NextResponse.json({ projects });
+		return NextResponse.json({ techs });
 	} catch (error) {
 		console.error("Erro ao consultar Notion:", error);
 		return NextResponse.json(
