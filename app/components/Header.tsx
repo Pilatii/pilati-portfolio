@@ -32,7 +32,7 @@ export default function Header() {
 				</a>
 				<a
 					target="blank"
-					href="https://www.linkedin.com/in/gabriel-pilati-914939196/"
+					href="https://www.linkedin.com/in/gabriel-pilati/"
 					className="group flex items-center text-sm sm:text-base gap-2 border border-gray-700 px-2.5 py-2 sm:px-6 sm:py-3 hover:border-white transition-all duration-300"
 				>
 					<Linkedin className="w-3 h-3 sm:w-5 sm:h-5" />
